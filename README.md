@@ -1,3 +1,25 @@
+
+# rtc.io build resources
+
+This is a repo that provides you tools for building WebRTC application on mobile devices. It will include different scripts to help you generate mobile packages.
+
+## signApp
+
+This is a tool that does sign/re-sign your .app or .ipa packages and repacks into .ipa for installation on iOS devices.
+
+```bash
+usage: ./signApp.sh source identity [-p provisioning] [-e entitlements] target.ipa
+
+source: input a .app or .ipa file for signning
+
+identity: common name of your apple certificate to be used with -p provisioning
+
+provisioning: Sign .ipa file with .mobileprovision
+
+target.ipa: output a .ipa file
+
+./signApp.sh /path/to/source.app "iPhone Developer: build rtc(XXXXXXXX)" -p xxx.mobileprovision output.ipa
+```
 ## License(s)
 
 ### Apache 2.0
