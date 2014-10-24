@@ -3,7 +3,7 @@
 
 This is a repo that provides you tools for building WebRTC application on mobile devices. It will include different scripts to help you generate mobile packages.
 
-## signApp
+## signApp.sh
 
 This is a tool that does sign/re-sign your .app or .ipa packages and repacks into .ipa for installation on iOS devices.
 
